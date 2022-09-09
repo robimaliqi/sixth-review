@@ -1,5 +1,5 @@
 const schoolReport = (input) => {
-  const inputArray = input.split(" ");
+  const inputArray = input.replace(",", "").split(" ");
   let greenCount = 0;
   let amberCount = 0;
   let redCount = 0;
@@ -15,17 +15,17 @@ const schoolReport = (input) => {
     }
   }
 
-  if (greenCount > 0) {
-    newGrades.push(`Green: ${greenCount}`);
-  }
   if (redCount > 0) {
     newGrades.push(`Red: ${redCount}`);
+  }
+  if (greenCount > 0) {
+    newGrades.push(`Green: ${greenCount}`);
   }
   if (amberCount > 0) {
     newGrades.push(`Amber: ${amberCount}`);
   }
 
-  return newGrades.join(" ");
+  return newGrades.join("\n");
 };
 
 module.exports = schoolReport;

@@ -20,4 +20,8 @@ describe("schoolReport", () => {
   it("it returns the amount of two of different inputs", () => {
     expect(schoolReport("Red, Green")).toEqual("Red: 1\nGreen: 1");
   });
+
+  it("it returns the amount of two of different inputs", () => {
+    expect(schoolReport("Green, Red")).toEqual("Green: 1\nRed: 1");
+  });
 });
