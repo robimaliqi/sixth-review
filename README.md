@@ -10,7 +10,7 @@ Input | Ouput
 "Green, Green, Red, Amber, Red" | "Green: 2\nAmber: 1\nRed: 2"
 
 Edge cases:
-""
+"" "No results given"
 wrong input (not a string) : Error "Input must be a comma-separated string"
 incorrect spelling:
 "Green,Dave,Whimsy,Red"
