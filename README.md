@@ -15,3 +15,7 @@ wrong input (not a string) : Error "Input must be a comma-separated string"
 incorrect spelling:
 "Green,Dave,Whimsy,Red"
 "Green: 1\nRed: 1\nUncounted: 2"
+
+Use more descriptive name rather than input, test results or grades
+
+makes it easier for someone to understand what the code actually does
