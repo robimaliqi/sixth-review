@@ -13,7 +13,11 @@ describe("schoolReport", () => {
     expect(schoolReport("Red")).toEqual("Red: 1");
   });
 
-  it("it returns an the amount of two fo the same inputs", () => {
+  it("it returns the amount of two fo the same inputs", () => {
     expect(schoolReport("Red, Red")).toEqual("Red: 2");
+  });
+
+  it("it returns the amount of two fo the same inputs", () => {
+    expect(schoolReport("Red, Green")).toEqual("Red: 1\nGreen: 1");
   });
 });
